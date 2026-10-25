@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@theme {
+  --animate-img1: img1 10s ease-in-out infinite;
+  --animate-img2: img2 10s ease-in-out infinite;
+  --animate-img3: img3 10s ease-in-out infinite;
+  @keyframes img1 {
+    0%,
+    31%,
+    100% {
+      opacity: 1;
+    }
+    35%,
+    96% {
+      opacity: 0;
+    }
+  }
+  @keyframes img2 {
+    0%,
+    31% {
+      opacity: 0;
+    }
+    35%,
+    64% {
+      opacity: 1;
+    }
+  }
+  @keyframes img3 {
+    0%,
+    64%,
+    100% {
+      opacity: 0;
+    }
+    68%,
+    96% {
+      opacity: 1;
+    }
+  }
+}
+
+@layer bese {
+  h1 {
+    @apply text-3xl text-slate-700 underline text-center;
+  }
+}
+@layer utilities; /* {
+  .animeImg1 {
+    @apply animate-[img1_10s_ease-in-out_infinite] w-full h-full object-cover
+  }
+  .animeImg2 {
+    @apply animate-[img2_10s_ease-in-out_infinite] w-full h-full object-cover
+  }
+  .animeImg3 {
+    @apply animate-[img3_10s_ease-in-out_infinite] w-full h-full object-cover;
+  }
+}
+
+@keyframes img1 {
+  0%,
+  31%,
+  100% {
+    opacity: 1;
+  }
+  35%,
+  96% {
+    opacity: 0;
+  }
+}
+@keyframes img2 {
+  0%,
+  31% {
+    opacity: 0;
+  }
+  35%,
+  64% {
+    opacity: 1;
+  }
+}
+@keyframes img3 {
+  0%,
+  64%,
+  100% {
+    opacity: 0;
+  }
+  68%,
+  96% {
+    opacity: 1;
+  }
+} */

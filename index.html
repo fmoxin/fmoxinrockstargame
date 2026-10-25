@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vice City | Games, News &amp; Stories</title>
+    <meta name="description" content="Explore the worlds, stories and characters behind the games: newswire, online worlds, store and support." />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- LCP: اولین تصویر هیرو زودتر لود بشه -->
+    <link rel="preload" as="image" href="assets/image/1920x823acelMlVZvlYvHh9sY.webp" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+
+    <script>document.documentElement.classList.add("js");</script>
+    <style>
+      /* انیمیشن ظاهر شدن موقع اسکرول (فقط وقتی کاربر انیمیشن کم نخواسته) */
+      @media (prefers-reduced-motion: no-preference) {
+        .js [data-reveal] { opacity: 0; }
+        .js [data-reveal].is-in { opacity: 1; animation: reveal .8s cubic-bezier(.2,.7,.2,1) backwards; }
+        @keyframes reveal { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+      }
+    </style>
+  </head>
+
+  <body class="bg-black text-white antialiased selection:bg-amber-400 selection:text-black">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded-full focus:font-semibold">
+      Skip to content
+    </a>
+
+    <main id="main">
+
+      <!-- ===================== HERO ===================== -->
+      <section class="w-full h-dvh min-h-[560px] bg-amber-900 relative overflow-hidden">
+
+        <!-- اسلایدشو پس‌زمینه (تزئینی) -->
+        <div class="absolute inset-0 *:absolute *:top-0 *:left-0 *:w-full *:h-full *:object-cover" aria-hidden="true">
+          <img class="animate-img1" src="assets/image/1920x823acelMlVZvlYvHh9sY.webp" alt="" fetchpriority="high" decoding="async" />
+          <img class="animate-img2" src="assets/image/wp2127222-max-payne-3-wallpapers.jpg" alt="" decoding="async" />
+          <img class="animate-img3" src="assets/image/rdd2)1.jpg" alt="" decoding="async" />
+        </div>
+
+        <!-- لایه تیره برای خوانایی متن روی هر تصویر -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/25 to-black/80 pointer-events-none"></div>
+
+        <header class="relative z-20 w-full h-20 px-5 lg:px-10 flex flex-row items-center justify-between border-b border-white/20 text-white backdrop-blur-sm">
+
+          <!-- دکمه منوی موبایل -->
+          <button id="menu-btn" type="button" class="lg:hidden -ml-2 p-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer"
+                  aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+
+          <a href="#" class="flex justify-center items-center h-full" aria-label="Home">
+            <img class="h-1/2 object-contain" src="assets/image/logo.jpg" alt="Logo" />
+          </a>
+
+          <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold" aria-label="Main">
+            <a href="#" class="hover:text-amber-400 transition-colors duration-200">Home</a>
+            <a href="#" class="hover:text-amber-400 transition-colors duration-200">Services</a>
+            <a href="#" class="hover:text-amber-400 transition-colors duration-200">Contact</a>
+          </nav>
+
+          <a href="#" class="flex items-center gap-2 text-sm font-semibold hover:text-amber-400 transition-colors duration-200" aria-label="Account">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+            </svg>
+            <span class="hidden sm:inline">User</span>
+          </a>
+
+          <!-- منوی موبایل -->
+          <nav id="mobile-menu" class="hidden lg:hidden absolute top-full inset-x-0 bg-black/90 backdrop-blur-md border-b border-white/10 px-5 py-4 flex-col gap-1 text-base font-semibold" aria-label="Mobile">
+            <a href="#" class="block py-3 border-b border-white/10 hover:text-amber-400 transition-colors">Home</a>
+            <a href="#" class="block py-3 border-b border-white/10 hover:text-amber-400 transition-colors">Services</a>
+            <a href="#" class="block py-3 hover:text-amber-400 transition-colors">Contact</a>
+          </nav>
+        </header>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 h-[calc(100dvh-5rem)] min-h-[480px] flex flex-col items-center justify-center text-center text-white px-5">
+          <figure class="mb-8 flex items-center gap-3">
+            <img class="h-14 object-contain drop-shadow-lg" src="assets/image/logo.jpg" alt="" />
+            <figcaption class="text-2xl font-bold tracking-widest uppercase">Rockstar</figcaption>
+          </figure>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight drop-shadow-lg text-balance">
+            Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-500">Vice City</span>
+          </h1>
+
+          <p class="mt-5 max-w-xl text-base lg:text-lg text-white/80 leading-relaxed text-balance">
+            Explore the worlds, stories and characters behind the games, with the latest news, online events and more.
+          </p>
+
+          <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
+            <a href="#" class="px-8 py-3 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-full shadow-lg shadow-amber-500/20 transition-all duration-300 hover:-translate-y-0.5 active:scale-95">
+              Get Started
+            </a>
+            <a href="#" class="px-8 py-3 border border-white/40 hover:bg-white/10 rounded-full font-semibold backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 active:scale-95">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- فلش اسکرول -->
+        <a href="#newswire" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-white/70 hover:text-white transition-colors animate-bounce motion-reduce:animate-none" aria-label="Scroll to news">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- ===================== NEWSWIRE ===================== -->
+      <section id="newswire" class="w-full bg-black text-white px-5 lg:px-10 py-14 lg:py-20">
+        <div class="max-w-[1600px] mx-auto">
+
+          <div class="flex items-end justify-between mb-8">
+            <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight">Newswire</h2>
+            <a href="#" class="text-sm font-semibold text-white/70 hover:text-amber-400 transition-colors duration-300">View all &rarr;</a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8">
+
+            <!-- خبر اصلی -->
+            <article data-reveal>
+              <a href="#" class="group block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-400">
+                <figure class="overflow-hidden">
+                  <img class="w-full aspect-[16/8] object-cover transition-transform duration-700 group-hover:scale-105"
+                       src="assets/image/1920x823aUj9tGx3UJvp6nbhP.webp" alt="Grand Theft Auto VI" loading="lazy" decoding="async" />
+                </figure>
+                <div class="bg-[#111] p-8 lg:p-12">
+                  <p class="text-xs font-bold tracking-widest text-amber-400/90 uppercase mb-4">Grand Theft Auto VI</p>
+                  <h3 class="text-3xl lg:text-5xl font-extrabold leading-tight text-balance group-hover:text-amber-400 transition-colors duration-300">
+                    The Music of Grand Theft Auto VI: In-Game Radio Stations
+                  </h3>
+                  <time datetime="2026-10-08" class="block mt-10 text-sm text-white/50">October 8, 2026</time>
+                </div>
+              </a>
+            </article>
+
+            <!-- لیست اخبار کوچیک -->
+            <div class="flex flex-col gap-8">
+
+              <article data-reveal>
+                <a href="#" class="group flex gap-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-400">
+                  <figure class="shrink-0 w-40 lg:w-48 overflow-hidden">
+                    <img class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
+                         src="assets/image/wp2127222-max-payne-3-wallpapers.jpg" alt="Max Payne 3" loading="lazy" decoding="async" />
+                  </figure>
+                  <div>
+                    <p class="text-[11px] font-bold tracking-widest text-amber-400/90 uppercase mb-2">Max Payne</p>
+                    <h3 class="text-xl font-bold leading-snug group-hover:text-amber-400 transition-colors duration-300">Max Payne 3</h3>
+                    <time datetime="2026-10-08" class="block mt-3 text-xs text-white/50">October 8, 2026</time>
+                  </div>
+                </a>
+              </article>
+
+              <article data-reveal>
+                <a href="#" class="group flex gap-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-400">
+                  <figure class="shrink-0 w-40 lg:w-48 overflow-hidden">
+                    <img class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
+                         src="assets/image/rdd2)1.jpg" alt="Red Dead Redemption 2" loading="lazy" decoding="async" />
+                  </figure>
+                  <div>
+                    <p class="text-[11px] font-bold tracking-widest text-amber-400/90 uppercase mb-2">Red Dead Redemption</p>
+                    <h3 class="text-xl font-bold leading-snug group-hover:text-amber-400 transition-colors duration-300">Red Dead Redemption 2</h3>
+                    <time datetime="2026-10-08" class="block mt-3 text-xs text-white/50">October 8, 2026</time>
+                  </div>
+                </a>
+              </article>
+
+              <article data-reveal>
+                <a href="#" class="group flex gap-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-400">
+                  <figure class="shrink-0 w-40 lg:w-48 overflow-hidden">
+                    <img class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
+                         src="assets/image/v.jpeg" alt="Grand Theft Auto V" loading="lazy" decoding="async" />
+                  </figure>
+                  <div>
+                    <p class="text-[11px] font-bold tracking-widest text-amber-400/90 uppercase mb-2">Grand Theft Auto</p>
+                    <h3 class="text-xl font-bold leading-snug group-hover:text-amber-400 transition-colors duration-300">Grand Theft Auto V</h3>
+                    <time datetime="2026-10-08" class="block mt-3 text-xs text-white/50">October 8, 2026</time>
+                  </div>
+                </a>
+              </article>
+
+              <article data-reveal>
+                <a href="#" class="group flex gap-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-400">
+                  <figure class="shrink-0 w-40 lg:w-48 overflow-hidden">
+                    <img class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
+                         src="assets/image/LAN_FOB.webp" alt="Bully" loading="lazy" decoding="async" />
+                  </figure>
+                  <div>
+                    <p class="text-[11px] font-bold tracking-widest text-amber-400/90 uppercase mb-2">Bully</p>
+                    <h3 class="text-xl font-bold leading-snug group-hover:text-amber-400 transition-colors duration-300">Bully</h3>
+                    <time datetime="2026-10-08" class="block mt-3 text-xs text-white/50">October 8, 2026</time>
+                  </div>
+                </a>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== VIDEO HERO ===================== -->
+      <section class="relative w-full min-h-dvh overflow-hidden bg-black text-white">
+
+        <!-- TODO: یه poster بذار تا قبل از لود ویدیو تصویر نشون بده: poster="assets/image/video-poster.jpg" -->
+        <video id="bg-video" class="absolute inset-0 w-full h-full object-cover"
+               src="assets/image/Rockstar%20Games.mp4"
+               autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+        </video>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black/90 pointer-events-none"></div>
+
+        <!-- دکمه توقف / پخش (واقعا کار می‌کنه) -->
+        <button id="video-toggle" type="button"
+                class="absolute z-20 top-8 right-5 lg:top-24 lg:right-8 w-11 h-11 rounded-full bg-white text-black flex items-center justify-center hover:scale-110 active:scale-95 transition-transform duration-300 cursor-pointer"
+                aria-label="Pause background video">
+          <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
+            <rect x="6" y="5" width="4" height="14" rx="1" />
+            <rect x="14" y="5" width="4" height="14" rx="1" />
+          </svg>
+          <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 hidden" aria-hidden="true">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </button>
+
+        <div class="relative z-10 min-h-dvh flex items-end pb-20 px-5 lg:px-24">
+          <div class="flex flex-col lg:flex-row items-start lg:items-end gap-8 lg:gap-14 w-full" data-reveal>
+
+            <figure class="shrink-0">
+              <img class="w-56 lg:w-64 object-contain drop-shadow-2xl"
+                   src="assets/image/logo/5eBHoDfTOcVnKNIKwBJuyp.svg" alt="Grand Theft Auto Online" loading="lazy" decoding="async" />
+            </figure>
+
+            <div class="flex-1 max-w-2xl">
+              <nav class="flex items-center gap-2 text-sm font-semibold mb-3" aria-label="Breadcrumb">
+                <a href="#" class="opacity-80 hover:opacity-100 transition-opacity">Games</a>
+                <span class="opacity-50" aria-hidden="true">/</span>
+                <span aria-current="page">Grand Theft Auto Online</span>
+              </nav>
+
+              <p class="text-base lg:text-lg leading-relaxed text-white/90 text-pretty">
+                Explore GTA Online, a dynamic world for up to 30 players, featuring
+                all updates and content since launch, playable solo or with friends.
+              </p>
+
+              <div class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-4">
+                <a href="#" class="flex items-center gap-2 px-7 py-3.5 bg-white text-black text-sm font-bold rounded-full hover:bg-neutral-200 active:scale-95 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4" aria-hidden="true">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                  Watch Trailer
+                </a>
+                <a href="#" class="px-7 py-3.5 bg-white/10 backdrop-blur-sm border border-white/30 text-sm font-bold rounded-full hover:bg-white/20 active:scale-95 transition-all duration-300">
+                  Learn More
+                </a>
+
+                <!-- پلتفرم‌ها -->
+                <ul class="flex items-center gap-6 sm:ml-2 opacity-90 h-8 list-none" aria-label="Available platforms">
+                  <li class="h-full"><img src="assets/image/logo/PS5_Logo_KO.svg" alt="PlayStation 5" class="h-full w-auto brightness-0 invert" loading="lazy" decoding="async" /></li>
+                  <li class="h-full"><img src="assets/image/logo/PS4_Logo_Full_KO.svg" alt="PlayStation 4" class="h-full w-auto brightness-0 invert" loading="lazy" decoding="async" /></li>
+                  <li class="h-full"><img src="assets/image/logo/XBSXS_Horz_White.svg" alt="Xbox Series X|S" class="h-full w-auto" loading="lazy" decoding="async" /></li>
+                  <!-- TODO: این فایل با لوگوی بالا یکیه، فایل Xbox One رو جایگزین کن -->
+                  <li class="h-full"><img src="assets/image/logo/5eBHoDfTOcVnKNIKwBJuyp.svg" alt="Xbox One" class="h-full w-auto brightness-0 invert" loading="lazy" decoding="async" /></li>
+                  <li class="h-full"><img src="assets/image/logo/vH3cmDeyYwZAfOSRrFzF7.svg" alt="PC" class="h-full w-auto brightness-0 invert" loading="lazy" decoding="async" /></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ONLINE CARDS ===================== -->
+      <section class="w-full bg-black text-white px-6 lg:px-16 py-16 lg:py-20">
+        <div class="max-w-[1600px] mx-auto">
+          <h2 class="text-2xl lg:text-3xl font-extrabold mb-8 tracking-wide">Jump Into Red Dead Online</h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1: Halloween -->
+            <article data-reveal class="group relative rounded-2xl overflow-hidden aspect-[3/4.6] flex flex-col justify-end p-6 border border-white/10 hover:border-white/30 transition-all duration-500 shadow-xl">
+              <img src="assets/image/2x3aIcA7bGHhWd9XZ0px.webp" alt="" loading="lazy" decoding="async"
+                   class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <div class="mb-5">
+                  <span class="text-[10px] font-bold text-red-500 tracking-widest uppercase block mb-1">Red Dead Online</span>
+                  <h3 class="text-2xl lg:text-3xl font-black uppercase tracking-wider text-neutral-200">Halloween</h3>
+                </div>
+                <span class="px-6 py-2.5 bg-white/15 group-hover:bg-white text-white group-hover:text-black text-xs font-bold rounded-full backdrop-blur-md border border-white/20 transition-all duration-300">View Event</span>
+              </div>
+              <a href="#" class="absolute inset-0 z-20 rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" aria-label="Halloween: View Event"></a>
+            </article>
+
+            <!-- Card 2: Strange Tales -->
+            <article data-reveal class="group relative rounded-2xl overflow-hidden aspect-[3/4.6] flex flex-col justify-end p-6 border border-white/10 hover:border-white/30 transition-all duration-500 shadow-xl">
+              <img src="assets/image/33dtXeQECAzeleGcdEn3Pw.webp" alt="" loading="lazy" decoding="async"
+                   class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <div class="mb-5">
+                  <span class="text-[10px] font-bold text-red-500 tracking-widest uppercase block mb-1">Red Dead Online</span>
+                  <h3 class="text-xl lg:text-2xl font-black uppercase text-amber-500 leading-tight">
+                    Strange Tales<br /><span class="text-base text-amber-400">of the West</span>
+                  </h3>
+                  <span class="text-[11px] text-white/70 font-semibold">VOL. 1</span>
+                </div>
+                <span class="px-6 py-2.5 bg-white/15 group-hover:bg-white text-white group-hover:text-black text-xs font-bold rounded-full backdrop-blur-md border border-white/20 transition-all duration-300">Watch Trailer</span>
+              </div>
+              <a href="#" class="absolute inset-0 z-20 rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" aria-label="Strange Tales of the West: Watch Trailer"></a>
+            </article>
+
+            <!-- Card 3: Catalogue -->
+            <article data-reveal class="group relative rounded-2xl overflow-hidden aspect-[3/4.6] flex flex-col justify-end p-6 border border-white/10 hover:border-white/30 transition-all duration-500 shadow-xl">
+              <img src="assets/image/1pdeyY9jS0CTqc3ykac5ca.webp" alt="" loading="lazy" decoding="async"
+                   class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <span class="px-6 py-2.5 bg-white/15 group-hover:bg-white text-white group-hover:text-black text-xs font-bold rounded-full backdrop-blur-md border border-white/20 transition-all duration-300">Visit Catalogue</span>
+              </div>
+              <a href="#" class="absolute inset-0 z-20 rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" aria-label="Visit Catalogue"></a>
+            </article>
+
+            <!-- Card 4: Outlaw Career -->
+            <article data-reveal class="group relative rounded-2xl overflow-hidden aspect-[3/4.6] flex flex-col justify-end p-6 border border-white/10 hover:border-white/30 transition-all duration-500 shadow-xl">
+              <img src="assets/image/7l6bQfiLdrZSgHqWUaxcHI.webp" alt="" loading="lazy" decoding="async"
+                   class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+              <div class="relative z-10 flex flex-col items-center text-center">
+                <p class="text-sm font-bold text-white mb-5 drop-shadow-md">Track your outlaw career.</p>
+                <span class="px-6 py-2.5 bg-white/15 group-hover:bg-white text-white group-hover:text-black text-xs font-bold rounded-full backdrop-blur-md border border-white/20 transition-all duration-300">View Progress</span>
+              </div>
+              <a href="#" class="absolute inset-0 z-20 rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" aria-label="Track your outlaw career: View Progress"></a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== STORE ===================== -->
+      <section class="w-full bg-[#111111] text-white px-6 lg:px-16 py-20">
+        <div class="max-w-[1500px] mx-auto">
+
+          <div class="flex items-center justify-between mb-10">
+            <h2 class="text-4xl lg:text-5xl font-extrabold tracking-tight">Store</h2>
+            <a href="#" class="group flex items-center gap-2 text-lg font-semibold hover:text-white/70 transition-colors duration-300">
+              View All
+              <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:h-[760px]">
+
+            <a href="#" data-reveal class="group relative rounded-xl overflow-hidden h-[420px] lg:h-full block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <img src="assets/image/s4.webp" alt="New Arrivals" loading="lazy" decoding="async"
+                   class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+              <span class="absolute bottom-6 left-6 flex items-center gap-2 px-7 py-3.5 bg-white text-black text-base font-bold rounded-full shadow-lg transition-transform duration-300 group-hover:scale-105">
+                Shop New Arrivals
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+                </svg>
+              </span>
+            </a>
+
+            <div class="flex flex-col gap-5 lg:h-full">
+
+              <a href="#" data-reveal class="group relative rounded-xl overflow-hidden h-56 shrink-0 block bg-neutral-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                <img src="assets/image/s1.webp" alt="Apparel" loading="lazy" decoding="async"
+                     class="absolute inset-0 w-full h-full object-cover object-[center_40%] transition-transform duration-700 ease-out group-hover:scale-105" />
+                <span class="absolute bottom-5 left-6 flex items-center gap-2 text-white text-lg font-bold drop-shadow-md transition-all duration-300 group-hover:gap-3">
+                  Shop Apparel
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+                  </svg>
+                </span>
+              </a>
+
+              <div class="grid grid-cols-2 gap-5 flex-1 min-h-0">
+
+                <a href="#" data-reveal class="group relative rounded-xl overflow-hidden block bg-neutral-200 min-h-48 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  <img src="assets/image/s2.webp" alt="Collectibles" loading="lazy" decoding="async"
+                       class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+                  <span class="absolute bottom-5 left-5 flex items-center gap-2 text-black text-base sm:text-lg font-bold transition-all duration-300 group-hover:gap-3">
+                    Shop Collectibles
+                    <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+                    </svg>
+                  </span>
+                </a>
+
+                <a href="#" data-reveal class="group relative rounded-xl overflow-hidden block bg-neutral-200 min-h-48 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  <img src="assets/image/s3.webp" alt="Accessories" loading="lazy" decoding="async"
+                       class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+                  <span class="absolute bottom-5 left-5 flex items-center gap-2 text-black text-base sm:text-lg font-bold transition-all duration-300 group-hover:gap-3">
+                    Shop Accessories
+                    <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M7 7h10v10" />
+                    </svg>
+                  </span>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SUPPORT ===================== -->
+      <section class="relative w-full h-[70vh] min-h-[500px] overflow-hidden bg-black">
+        <img src="assets/image/footer.jpg" alt="" loading="lazy" decoding="async"
+             class="absolute inset-0 w-full h-full object-cover grayscale brightness-[0.35]" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#111111]"></div>
+
+        <div class="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-6" data-reveal>
+          <div class="flex items-center gap-3 mb-5">
+            <svg class="w-10 h-10 fill-white" viewBox="0 0 512 512" aria-hidden="true">
+              <path d="M120 40h272c44.2 0 80 35.8 80 80v272c0 44.2-35.8 80-80 80H120c-44.2 0-80-35.8-80-80V120c0-44.2 35.8-80 80-80zm210 178l-52-16 35-41c4-5 2-13-4-15l-52-18-18 52c-2 6-9 8-15 4l-42-32-15 52c-2 6-8 9-14 7l-53-15 16 52c2 6 0 13-6 16l-50 20 44 32c5 4 6 11 2 16l-32 44 53-12c6-1 12 2 14 8l20 50 32-44c4-5 11-6 16-2l44 32 12-53c1-6 7-10 13-9l53 12-32-44c-4-5-3-12 2-16l50-20-53-15c-6-2-9-8-7-14z" />
+            </svg>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">Support</h2>
+          </div>
+
+          <p class="max-w-md text-base md:text-lg text-white/90 leading-relaxed mb-8 text-balance">
+            Get help with issues, browse common solutions, view service status updates, and more.
+          </p>
+
+          <a href="#" class="px-8 py-3 bg-white text-black text-sm md:text-base font-bold rounded-full shadow-lg transition-transform duration-200 hover:scale-105 active:scale-95">
+            Get Support
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="w-full bg-[#111111] text-white px-6 lg:px-16 pb-12">
+      <div class="max-w-[1500px] mx-auto">
+
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 py-8">
+          <nav class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm md:text-base font-bold" aria-label="Footer">
+            <a href="#" class="hover:text-white/60 transition-colors duration-200">Contact</a>
+            <a href="#" class="hover:text-white/60 transition-colors duration-200">Careers</a>
+            <a href="#" class="hover:text-white/60 transition-colors duration-200">Community Resources</a>
+            <a href="#" class="hover:text-white/60 transition-colors duration-200">Subscribe</a>
+          </nav>
+
+          <button type="button" class="flex items-center gap-2 px-4 py-2.5 border border-white/30 rounded-lg text-sm md:text-base font-semibold hover:border-white transition-colors duration-200 w-fit cursor-pointer" aria-label="Change language">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2c2.5 2.7 4 6.2 4 10s-1.5 7.3-4 10c-2.5-2.7-4-6.2-4-10s1.5-7.3 4-10z" />
+            </svg>
+            <span>English</span>
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="border-t border-white/10"></div>
+
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 py-8">
+          <nav class="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs md:text-sm text-white/70" aria-label="Legal">
+            <a href="#" class="hover:text-white transition-colors duration-200">Corporate</a>
+            <a href="#" class="hover:text-white transition-colors duration-200">Privacy</a>
+            <a href="#" class="hover:text-white transition-colors duration-200">Cookie Settings</a>
+            <a href="#" class="hover:text-white transition-colors duration-200">Cookie Policy</a>
+            <a href="#" class="hover:text-white transition-colors duration-200">Legal</a>
+            <a href="#" class="hover:text-white transition-colors duration-200">Do Not Sell or Share My Personal Information</a>
+          </nav>
+
+          <!-- شبکه‌های اجتماعی -->
+          <ul class="flex items-center gap-6 text-white/80 list-none" aria-label="Social media">
+            <li>
+              <a href="#" class="hover:text-white transition-colors duration-200" aria-label="Instagram">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.6 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8C2.4 4 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 3.6a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.4a1.4 1.4 0 100 2.9 1.4 1.4 0 000-2.9z" /></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors duration-200" aria-label="X">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.2l7.3-8.3L1.6 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.8H5.3L17.8 20z" /></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors duration-200" aria-label="YouTube">
+                <svg class="w-5 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.5 15.6V8.4L15.8 12l-6.3 3.6z" /></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors duration-200" aria-label="Facebook">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 10-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0024 12z" /></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors duration-200" aria-label="TikTok">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 5.8a5 5 0 01-3.6-3.7c-.1-.4-.1-.8-.1-1.2h-3.7v14.9a3.1 3.1 0 11-3.1-3.2c.3 0 .7 0 1 .1V9a7 7 0 00-1-.1 6.9 6.9 0 106.9 6.9V8.7a8.6 8.6 0 005 1.6V6.9c-.5 0-.9-.1-1.4-.2v-.9z" /></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors duration-200" aria-label="Discord">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0015.4 3l-.2.5a18 18 0 00-6.4 0L8.6 3a19.8 19.8 0 00-4.9 1.5A20.6 20.6 0 00.2 18.1a19.9 19.9 0 006 3l.5-.7a13.7 13.7 0 01-2.1-1l.5-.4a14.2 14.2 0 0012 0l.5.4a13.7 13.7 0 01-2.1 1l.5.7a19.8 19.8 0 006-3 20.5 20.5 0 00-3.7-13.7zM8.5 15.3c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4zm7 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.2 1.1 2.1 2.4c0 1.3-.9 2.4-2.1 2.4z" /></svg>
+              </a>
+            </li>
+            <li>
+              <!-- TODO: آیکون Twitch توی کد اصلیت نصفه بود و کل صفحه رو خراب می‌کرد. آیکونش رو از Simple Icons بگیر و جای این متن بذار -->
+              <a href="#" class="text-xs font-bold hover:text-white transition-colors duration-200" aria-label="Twitch">Twitch</a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="text-xs text-white/40 pt-2">
+          &copy; <span id="year">2026</span> Portfolio practice project. All trademarks belong to their respective owners.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===================== DEVELOPER CARD ===================== -->
+    <section class="relative min-h-[50vh] w-full bg-[#070708] text-white flex items-center justify-center py-20 px-4 md:px-8 overflow-hidden">
+
+      <!-- گرید و نورپردازی پس‌زمینه -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-72 h-72 bg-amber-500/15 rounded-full blur-[100px] pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-72 h-72 bg-orange-600/15 rounded-full blur-[100px] pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-5xl w-full mx-auto" data-reveal>
+        <div class="relative rounded-3xl bg-gradient-to-b from-white/[0.08] to-white/[0.02] border border-white/15 p-1 md:p-2 backdrop-blur-2xl shadow-[0_0_80px_rgba(0,0,0,0.8)]">
+          <div class="rounded-[22px] bg-[#0c0d10]/90 p-6 md:p-10 border border-white/5 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+
+            <!-- پرتره -->
+            <div class="relative group shrink-0">
+              <div class="absolute -inset-2 bg-gradient-to-tr from-amber-500 via-yellow-400 to-orange-600 rounded-3xl blur-md opacity-40 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+              <div class="relative w-44 h-56 md:w-52 md:h-64 rounded-2xl overflow-hidden border-2 border-yellow-500/40 bg-black shadow-2xl">
+                <img src="assets/image/me.png" alt="Portrait of Amin" loading="lazy" decoding="async"
+                     class="w-full h-full object-cover object-top grayscale contrast-125 brightness-95 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                <div class="absolute bottom-3 inset-x-3 flex items-center justify-between">
+                  <span class="text-[11px] font-mono tracking-widest text-yellow-400 font-bold uppercase">DEV // 01</span>
+                  <div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-[10px] font-mono">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping motion-reduce:animate-none"></span>
+                    ONLINE
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- اطلاعات -->
+            <div class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left w-full">
+
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-4">
+                <span class="px-3 py-1 rounded-md bg-yellow-400/10 border border-yellow-400/30 text-yellow-400 text-xs font-mono font-bold tracking-wider uppercase">Crafted by Amin</span>
+                <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-white/60 text-xs font-mono">Practice Project</span>
+              </div>
+
+              <h3 class="text-3xl md:text-5xl font-black tracking-tight text-white mb-2">
+                AMIN <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-300 to-orange-500">.DEV</span>
+              </h3>
+              <p class="text-yellow-400/90 font-mono text-sm tracking-widest uppercase mb-4">Front-End Developer &amp; UI Architect</p>
+
+              <p dir="rtl" lang="fa" class="text-white/70 text-sm md:text-base leading-loose max-w-xl mb-6 text-balance lg:text-right lg:w-full">
+                بازسازی رابط کاربری یک وب‌سایت بزرگ با انیمیشن‌های روان، طراحی واکنش‌گرا و معماری کامپوننت‌محور روی <span class="text-white font-semibold">Tailwind CSS</span>.
+              </p>
+
+              <ul class="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-8 list-none">
+                <li class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-white/80 border border-white/10">TailwindCSS</li>
+                <li class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-white/80 border border-white/10">HTML5 / Semantic</li>
+                <li class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-white/80 border border-white/10">Responsive Design</li>
+                <li class="text-xs font-mono px-2.5 py-1 rounded bg-white/5 text-white/80 border border-white/10">UI/UX Polish</li>
+              </ul>
+
+              <!-- TODO: your-username رو با یوزرنیم‌های واقعی عوض کن -->
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 w-full">
+
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
+                   class="flex-1 sm:flex-initial group flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-white/5 hover:bg-white text-white hover:text-black border border-white/15 hover:border-white transition-all duration-300 shadow-lg active:scale-95">
+                  <svg class="w-5 h-5 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  <span class="text-xs font-mono font-bold uppercase tracking-wider">GitHub</span>
+                </a>
+
+                <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer"
+                   class="flex-1 sm:flex-initial group flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-white/5 hover:bg-[#0a66c2] text-white border border-white/15 hover:border-[#0a66c2] transition-all duration-300 shadow-lg active:scale-95">
+                  <svg class="w-5 h-5 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                  <span class="text-xs font-mono font-bold uppercase tracking-wider">LinkedIn</span>
+                </a>
+
+                <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer"
+                   class="flex-1 sm:flex-initial group flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-white/5 hover:bg-gradient-to-r hover:from-[#833ab4] hover:via-[#fd1d1d] hover:to-[#fcb045] text-white border border-white/15 hover:border-transparent transition-all duration-300 shadow-lg active:scale-95">
+                  <svg class="w-5 h-5 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                  <span class="text-xs font-mono font-bold uppercase tracking-wider">Instagram</span>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JS ===================== -->
+    <script>
+      (function () {
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        // منوی موبایل
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (menuBtn && mobileMenu) {
+          const setMenu = (open) => {
+            mobileMenu.classList.toggle("hidden", !open);
+            mobileMenu.classList.toggle("flex", open);
+            menuBtn.setAttribute("aria-expanded", String(open));
+            menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+          };
+          menuBtn.addEventListener("click", () => setMenu(mobileMenu.classList.contains("hidden")));
+          document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
+          window.matchMedia("(min-width: 1024px)").addEventListener("change", (e) => { if (e.matches) setMenu(false); });
+        }
+
+        // ویدیو: دکمه پخش/توقف، توقف خودکار بیرون از دید، احترام به reduced-motion
+        const video = document.getElementById("bg-video");
+        const toggle = document.getElementById("video-toggle");
+        const iconPause = document.getElementById("icon-pause");
+        const iconPlay = document.getElementById("icon-play");
+        if (video && toggle) {
+          let userPaused = reduceMotion;
+          const render = () => {
+            const paused = video.paused;
+            iconPause.classList.toggle("hidden", paused);
+            iconPlay.classList.toggle("hidden", !paused);
+            toggle.setAttribute("aria-label", paused ? "Play background video" : "Pause background video");
+          };
+          if (reduceMotion) video.pause();
+          toggle.addEventListener("click", () => {
+            userPaused = !video.paused;
+            video.paused ? video.play().catch(() => {}) : video.pause();
+          });
+          video.addEventListener("play", render);
+          video.addEventListener("pause", render);
+          new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) { if (!userPaused) video.play().catch(() => {}); }
+            else video.pause();
+          }, { threshold: 0.15 }).observe(video);
+          render();
+        }
+
+        // انیمیشن ظاهر شدن موقع اسکرول
+        const items = document.querySelectorAll("[data-reveal]");
+        if (reduceMotion || !("IntersectionObserver" in window)) {
+          items.forEach((el) => el.classList.add("is-in"));
+        } else {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              const el = entry.target;
+              const index = Array.prototype.indexOf.call(el.parentElement.children, el);
+              el.style.animationDelay = Math.min(index, 4) * 90 + "ms";
+              el.classList.add("is-in");
+              io.unobserve(el);
+            });
+          }, { threshold: 0.12 });
+          items.forEach((el) => io.observe(el));
+        }
+
+        // سال فوتر
+        const year = document.getElementById("year");
+        if (year) year.textContent = new Date().getFullYear();
+      })();
+    </script>
+
+    <!-- npx @tailwindcss/cli -i ./src/assets/css/master.css -o ./src/assets/css/output.css --watch -->
+  </body>
+</html>
