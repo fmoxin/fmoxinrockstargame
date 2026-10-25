@@ -3,6 +3,6 @@ Responsive game-studio landing page built with HTML &amp; Tailwind CSS: hero sli
 
 ---
 
-##Live demo
+## Live demo
 
 (https://fmoxin.github.io/fmoxinrockstargame/)
